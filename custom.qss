@@ -1,0 +1,67 @@
+/* general ui */
+* {
+  font-size: 24px; font-family: Roboto;
+  background: #333; color: #eee
+}
+Palette {
+  link: #09f;
+  link-visited: #f9f;
+  window: #333;
+  window-text: #eee;
+  text: #eee;
+  marker-line: #09f;
+}
+
+/* messages */
+ChatView {background: #333}
+ChatLine[label="highlight"] {foreground: #eee; background: #0a0;}
+ChatLine::timestamp { foreground: #888; background: #111;}
+ChatLine#plain { foreground: #eee }
+ChatLine#notice { foreground: #eee }
+ChatLine#action { foreground: #eee; font-style: italic; }
+ChatLine#nick { foreground: #888 }
+ChatLine#mode { foreground: #888 }
+ChatLine#join { foreground: #888 }
+ChatLine#part { foreground: #888 }
+ChatLine#quit { foreground: #888 }
+ChatLine#kick { foreground: #888 }
+ChatLine#kill { foreground: #888 }
+ChatLine#netsplit { foreground: #888 }
+ChatLine#server { foreground: #888 }
+ChatLine#info { foreground: #888 }
+ChatLine#error { foreground: #888 }
+ChatLine#daychange { foreground: #888 }
+ChatLine#topic { foreground: #888 }
+
+/* message <senders> */
+ChatLine::sender#plain[sender="self"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="00"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="01"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="02"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="03"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="04"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="05"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="06"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="07"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="08"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="09"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="0a"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="0b"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="0c"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="0d"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="0e"] { foreground: #0099ff }
+ChatLine::sender#plain[sender="0f"] { foreground: #0099ff }
+
+/* list of #rooms */
+ChatListItem { foreground: #eee }
+ChatListItem[state="inactive"] { foreground: #888 }
+ChatListItem[state="channel-event"] { foreground: #fa0 }
+ChatListItem[state="unread-message"] { foreground: #0af }
+ChatListItem[state="highlighted"] { foreground: #0a0 }
+BufferView {background: #333}
+
+/* list of participants */
+NickListItem[type="category"] { foreground: #333; background: #999 }
+NickListItem[type="user"] { foreground: #eee }
+NickListItem[type="user", state="away"] { foreground: #888 }
+NickView { background: #333 }
