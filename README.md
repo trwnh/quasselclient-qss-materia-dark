@@ -1,6 +1,6 @@
 # quasselclient-qss
 custom theming for quassel client app.
-![preview](https://raw.githubusercontent.com/trwnh/quasselclient-qss/master/quasselclient_2018-06-30_02-52-48.png)
+![preview](https://raw.githubusercontent.com/trwnh/quasselclient-qss/master/quasselclient_2018-08-24_16-20-06.png)
 
 # installation
 - copy it to quassel/styles/custom.qss
