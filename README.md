@@ -1,5 +1,6 @@
 # quasselclient-qss-materia-dark
 custom theming for quassel client app.
+![preview](https://imgur.com/EJ3MizR.png)
 
 ## installation
 - copy it to quassel/styles/custom.qss or wherever really
