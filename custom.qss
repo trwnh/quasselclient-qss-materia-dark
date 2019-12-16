@@ -1,12 +1,12 @@
 /* general ui */
 * {
   font-size: 14px; font-family: Roboto;
-  background: #212121; color: #eee
+  background: #2c2c2c; color: #eee
 }
 Palette {
-  link: #09f;
-  link-visited: #f9f;
-  window: #212121;
+  link: #0288D1;
+  link-visited: #455A64;
+  window: #2c2c2c;
   window-text: #eee;
   text: #eee;
   marker-line: #09f;
@@ -14,7 +14,7 @@ Palette {
 
 /* messages */
 ChatView {background: #212121}
-ChatLine[label="highlight"] {foreground: #eee; background: #0a0;}
+ChatLine[label="highlight"] {foreground: #eee; background: #01579B;}
 ChatLine::timestamp { foreground: #888; background: #111;}
 ChatLine#plain { foreground: #eee }
 ChatLine#notice { foreground: #eee }
@@ -30,34 +30,35 @@ ChatLine#netsplit { foreground: #888 }
 ChatLine#server { foreground: #888 }
 ChatLine#info { foreground: #888 }
 ChatLine#error { foreground: #888 }
-ChatLine#daychange { foreground: #888 }
+ChatLine#daychange { foreground: #888 ; background: #111}
 ChatLine#topic { foreground: #888 }
 
 /* message <senders> */
-ChatLine::sender#plain[sender="self"] { foreground: #00ff00 }
-ChatLine::sender#plain[sender="00"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="01"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="02"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="03"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="04"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="05"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="06"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="07"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="08"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="09"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="0a"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="0b"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="0c"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="0d"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="0e"] { foreground: #607D8B }
-ChatLine::sender#plain[sender="0f"] { foreground: #607D8B }
+ChatLine::sender#plain { foreground: #EEEEEE; background: #2c2c2c}
+ChatLine::sender#plain[sender="self"] { foreground: #42A5F5 }
+ChatLine::sender#plain[sender="00"] { foreground: #EF9A9A }
+ChatLine::sender#plain[sender="01"] { foreground: #F48FB1 }
+ChatLine::sender#plain[sender="02"] { foreground: #CE93D8 }
+ChatLine::sender#plain[sender="03"] { foreground: #B39DDB }
+ChatLine::sender#plain[sender="04"] { foreground: #9FA8DA }
+ChatLine::sender#plain[sender="05"] { foreground: #81D4FA }
+ChatLine::sender#plain[sender="06"] { foreground: #80DEEA }
+ChatLine::sender#plain[sender="07"] { foreground: #80CBC4 }
+ChatLine::sender#plain[sender="08"] { foreground: #A5D6A7 }
+ChatLine::sender#plain[sender="09"] { foreground: #E6EE9C }
+ChatLine::sender#plain[sender="0a"] { foreground: #FFF59D }
+ChatLine::sender#plain[sender="0b"] { foreground: #FFE082 }
+ChatLine::sender#plain[sender="0c"] { foreground: #FFCC80 }
+ChatLine::sender#plain[sender="0d"] { foreground: #FFAB91 }
+ChatLine::sender#plain[sender="0e"] { foreground: #BCAAA4 }
+ChatLine::sender#plain[sender="0f"] { foreground: #B0BEC5 }
 
 /* list of #rooms */
-ChatListItem { foreground: #eee }
-ChatListItem[state="inactive"] { foreground: #888 }
-ChatListItem[state="channel-event"] { foreground: #fa0 }
-ChatListItem[state="unread-message"] { foreground: #0af }
-ChatListItem[state="highlighted"] { foreground: #0a0 }
+ChatListItem { foreground: #999 }
+ChatListItem[state="inactive"] { foreground: #555 }
+ChatListItem[state="channel-event"] { foreground: #999 }
+ChatListItem[state="unread-message"] { foreground: #fff }
+ChatListItem[state="highlighted"] { foreground: #1976D2 }
 BufferView {background: #212121}
 
 /* list of participants */
