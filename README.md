@@ -4,6 +4,7 @@ custom theming for quassel client app.
 
 ## installation
 - copy it to quassel/styles/custom.qss or wherever really
+- change some colors maybe? idk
 - select custom style
 
 ## etc
